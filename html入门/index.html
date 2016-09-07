@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>这是我的第一个html页面</title>
+
+    <style>
+        /*设置second-container的样式
+         通过class属性进行样式的标签元素的选择
+         此方法是实际开发中最最常见的用法
+        */
+
+        .second-container {
+            width: 200px;
+            height: 100px;
+            background-color: #333333;
+            margin: 10px;
+            /*设置间距*/
+            color: #fff;
+            /*设置字体颜色*/
+        }
+    </style>
+
+
+
+</head>
+
+<body>
+    <!--
+    第一种设置样式的方式；
+    通过在html标签中添加style属性进行样式的设置
+    background-color  设置颜色
+
+    不同的样式之间使用; 进行分割 ， 样式名字和值之间使用:进行分割
+   -->
+    <div style="background-color:red;width:300px;height:200px;color:#fff">
+        这里是容器内部
+    </div>
+    <!--
+    a 标签是一个链接地址
+    通过设置a标签的href属性进行页面跳转的设置
+
+    target属性可以设置新页面的打开位置，_blank表示在一个新的空白标签页进行打开
+    -->
+    <a href="index-2.html" target="_blank">这个是我的css分离文件的页面</a>
+
+    <!--
+     第二种设置样式的方式
+     在html代码中通过添加style节点进行样式设置
+
+     class表示标签的属性，用于设置样式的时候使用
+    -->
+    <div class="second-container">
+      这是第二个容器
+    </div>
+    <div class="second-container">这是第1个div</div>
+    <div class="second-container">这是第2个div</div>
+    <div class="second-container">这是第3个div</div>
+    <div class="second-container">这是第4个div</div>
+    <div class="second-container">这是第5个div</div>
+    <div class="second-container">这是第6个div</div>
+    <div class="second-container">这是第7个div</div>
+    <div class="second-container">这是第8个div</div>
+    <div class="second-container">这是第9个div</div>
+    <div class="second-container">这是第10个div</div>
+    <!-- (div class="second-container"{这是第$个div})*10 -->
+</body>
+
+</html>
