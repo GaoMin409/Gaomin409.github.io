@@ -1,0 +1,37 @@
+html, body {
+    height: 100%;
+}
+
+body {
+    background-color: #1894da;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    background-image: url('../images/true-6.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+.sport{
+  margin-left: 0;
+  /*background-color: #c64444;*/
+  width: 100%;
+  height: 200px;
+  float: left;
+}
+
+.sport li {
+  margin-top: 5px;
+left: 0;
+  width: 120px;
+  height: 180px;
+/*text-decoration: none;*/
+list-style: none;
+}
+
+.sport li img {
+width: 120px;
+  height: 120px;
+}

@@ -1,0 +1,53 @@
+html,body {
+  height: 100%;
+}
+
+body {
+  /*background-color: #08bede;*/
+  background-image: radial-gradient(red,yellow,green);
+  margin: 0;
+  position: absolute;
+}
+
+
+.myPicture {
+  width: 70%;
+  height: 200px;
+  margin-left: 100px;
+  border-radius: 20px;
+  justify-content: center;
+  background-image: url('../images/my.jpg');
+  background-position: center;
+  background-size: cover;
+
+  animation-name: headerImg;
+  animation-duration: 2s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-direction: normal;
+}
+@keyframes headerImg {
+  0%{
+    transform: rotate(-45deg);
+  }
+  100% {
+    transform: rotate(45deg);
+  }
+}
+
+.detail {
+  margin-top: 110px;
+/*margin-left: 10px;*/
+
+}
+
+
+.detail ul li {
+  font-size: 20px;
+  line-height: 35px;
+  list-style: none;
+}
+
+.detail ul li:before {
+  content: '🌹';
+}

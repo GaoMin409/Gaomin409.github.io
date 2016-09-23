@@ -1,0 +1,31 @@
+html,body {
+  height: 100%;
+}
+
+body {
+  background-color: #b3f218;
+  margin: 0;
+  position: absolute;
+  background-image: url('../images/true-4.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/*.skill {
+  /*background-color: #eee;*/
+
+
+
+h3 {
+
+  color: #000;
+  font-size: 25px;
+  margin-left: 15px;
+}
+
+.skill ul li {
+  font-size: 15px;
+  line-height: 20px;
+  color: #000000;
+}
