@@ -1,0 +1,79 @@
+html,body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-image: radial-gradient(#e9430e,#c4e90e,#0ee9c8,#0e6ce9);
+}
+
+h2 {
+ color: #000000;
+ font-size: 25px;
+ line-height: 30px;
+ text-align: center;
+}
+
+
+.shengShiQu {
+  margin-top: 20px;
+  float: left;
+
+}
+
+.shengShiQu li{
+  position: relative;
+  list-style: none;
+  margin-top: 10px;
+  /*width: 30%;*/
+}
+
+.shengShiQu li select {
+  border-style: dotted;
+  border-color: #555454;
+  border-width: 1px;
+  margin-left: 5px;
+  width: 100px;
+}
+
+.shengShiQu li:nth-child(1){
+  font-size: 20px;
+  line-height: normal;
+  margin-left: 45px;
+}
+.shengShiQu li:nth-child(2){
+  font-size: 15px;
+  line-height: normal;
+  margin-left: 150px;
+}
+.shengShiQu li:nth-child(3){
+  font-size: 10px;
+  line-height: normal;
+    margin-left: 250px;
+}
+
+
+.xianshi {
+  /*background-color: red;*/
+  width: 90%;
+  height: 200px;
+  margin-left: 5%;
+  margin-top: 250px;
+}
+.xianshi span {
+  color: red;
+  text-align: center;
+}
+
+.xianshi span:nth-child(1){
+  font-size: 25px;
+}
+
+.xianshi span:nth-child(2){
+  font-size: 20px;
+}
+
+.xianshi span:nth-child(3){
+  font-size: 15px;
+}

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>省市区三级联动</title>
+    <link rel="stylesheet" href="css/index.css">
+</head>
+
+<body>
+
+  <h2>省市区三级联动</h2>
+    <div class="shengShiQu">
+
+        <li>省:
+            <select name="sheng" id="sheng" onchange="selShengChange()"></select>
+        </li>
+
+        <li>市:
+            <select name="shi" id="shi" onchange="selShiChange()">
+          <option value="0">请选择</option>
+        </select>
+        </li>
+
+        <li>区:
+            <select name="qu" id="qu">
+          <option value="0">市辖区</option>
+        </select>
+        </li>
+    </div>
+
+
+<div class="xianshi">
+  <span id="shengSpan"></span>
+  <span id="shiSpan"></span>
+  <span id="quSpan"></span>
+</div>
+
+    <script src="js/index.js"></script>
+</body>
+
+</html>
