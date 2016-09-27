@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>天气预报</title>
+    <link rel="stylesheet" href="lib/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="CSS/index.css">
+</head>
+
+<body>
+
+    <h1>天气预报查询</h1>
+    <div class="input-group">
+        <!-- <span>请输入要查询的城市</span> -->
+        <span id="cityNameSpan">[郑州]</span>
+        <input type="text" placeholder="请输入城市名" id="city">
+        <div class="aaa">
+
+        <a href="javascript:void(0)" onclick="doSearch()">查询</a>
+            </div>
+    </div>
+    <div class="container" id="container">
+    </div>
+
+    <script id="table" type="text/html">
+        <table class="table table-bordered" id="myTable">
+            <tr class="warning">
+                <th>日期</th>
+                <th>星期</th>
+                <th>风向</th>
+                <th>风力</th>
+                <th>最高温度</th>
+                <th>最低温度</th>
+                <th>天气状态</th>
+                {{each list as value i}}
+                <tr onclick="delRow(event)">
+                    <td>{{value.date}}</td>
+                    <td>{{value.week}}</td>
+                    <td>{{value.fengxiang}}</td>
+                    <td>{{value.fengli}}</td>
+                    <td>{{value.hightemp}}</td>
+                    <td>{{value.lowtemp}}</td>
+                    <td>{{value.type}}</td>
+                </tr>
+                {{/each}}
+            </tr>
+        </table>
+    </script>
+
+    <script src="lib/template.js"></script>
+
+    <script src="lib/bootstrap/jquery.min.js"></script>
+    <script src="js/index.js"></script>
+</body>
+
+</html>
