@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>网上查询代码</title>
+</head>
+<body>
+
+
+  <p>动态表格彻底研究</p>
+  <p>对表格单元格的添加删除修改并对其进行移动以及拷贝等操作，是目前应用开发中常用的技术</p>
+    <p>
+      <input type="button" name="Submit" value="刷新" onclick="onRefresh()" />
+      <input type="button" name="Submit2" value="全选"  onclick="selectall()"/>
+      <input type="button" name="Submit8" value="反选" onclick="inverse()" />
+      <input type="button" name="Submit3" value="不选" onclick="noselect()"/>
+      <input type="button" name="Submit4" value="添加行与列" onclick="insert_row()" />
+      <input type="button" name="Submit7" value="删除选择" onclick="delRow()" />
+      <input type="button" name="Submit5" value="拷贝选择" onclick="copyRow()"/>
+      <input type="button" name="Submit92" value="居中对齐"  onclick="tableAlign()"/>
+      <input type="button" name="Submit922" value="隔行变色"  onclick="changeColor()"/>
+  </p>
+  <table width="50%" border="1" cellpadding="1" cellspacing="2" bordercolor="#CCCCCC" id="myTable">
+    <tr>
+      <td width="7%">
+        <label>
+          <input type="checkbox" name="checkbox" value="checkbox" />
+        </label>    </td>
+      <td width="51%">1</td>
+      <td width="14%">1</td>
+      <td width="14%">1</td>
+      <td width="14%">1</td>
+    </tr>
+    <tr>
+      <td><input type="checkbox" name="checkbox2" value="checkbox" /></td>
+      <td>2</td>
+      <td>2</td>
+      <td>2</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td><input type="checkbox" name="checkbox3" value="checkbox" /></td>
+      <td>3</td>
+      <td>3</td>
+      <td>3</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td><input type="checkbox" name="checkbox4" value="checkbox" /></td>
+      <td>4</td>
+      <td>4</td>
+      <td>4</td>
+      <td>4</td>
+    </tr>
+    <tr>
+      <td><input type="checkbox" name="checkbox5" value="checkbox" /></td>
+      <td>5</td>
+      <td colspan="2">55</td>
+      <td>5</td>
+    </tr>
+    <tr>
+      <td><input type="checkbox" name="checkbox6" value="checkbox" /></td>
+      <td>6</td>
+      <td>6</td>
+      <td>6</td>
+      <td>56</td>
+    </tr>
+    <tr>
+      <td><input type="checkbox" name="checkbox7" value="checkbox" /></td>
+      <td>777</td>
+      <td>7</td>
+      <td>77</td>
+      <td>7</td>
+    </tr>
+    <tr>
+      <td><input type="checkbox" name="checkbox8" value="checkbox" /></td>
+      <td>88</td>
+      <td>8</td>
+      <td>88</td>
+      <td>77</td>
+    </tr>
+    <tr>
+      <td><input type="checkbox" name="checkbox9" value="checkbox" /></td>
+      <td>999</td>
+      <td>99</td>
+      <td>99</td>
+      <td>999</td>
+    </tr>
+    <tr>
+      <td><input type="checkbox" name="checkbox10" value="checkbox" /></td>
+      <td>10</td>
+      <td>10</td>
+      <td>10</td>
+      <td>10</td>
+    </tr>
+  </table>
+  <br />
+  <p></p>
+
+  <script src="js/index.js">
+
+  </script>
+</body>
+</html>
