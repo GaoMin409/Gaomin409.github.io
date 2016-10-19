@@ -1,7 +1,8 @@
+<h1 style="text-align:center;margin:10px">当当网图书热销榜</h1>
 <div class="weui-cells">
-    <a ng-repeat='item in bookTypes' class="weui-cell weui-cell_access" href="javascript:;">
+    <a ng-repeat='item in bookTypes' class="weui-cell weui-cell_access" ng-href="#/book_list/{{item.id}}">
         <div class="weui-cell__hd"><img ng-src="{{item.img}}"
-                alt="" style="width:50px;margin-right:5px;display:block"></div>
+                alt="" style="width:50px;height:60px;margin-right:5px;display:block"></div>
         <div class="weui-cell__bd">
             <p>{{item.name}}</p>
         </div>
