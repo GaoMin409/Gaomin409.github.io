@@ -3,7 +3,7 @@ app.controller('bookListController', ['$scope','commonService','$routeParams', f
   console.dir($routeParams.id);
   // console.dir($routeParams);
 
-c_service.getData(c_service.id,function(res){
+c_service.getData($routeParams.id,function(res){
       console.dir(res.data);
     });
 
