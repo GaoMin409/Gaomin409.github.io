@@ -4,7 +4,7 @@ app.controller('bookListController', ['$scope','commonService','$routeParams', f
   // console.dir($routeParams);
 
 c_service.getData(c_service.id,function(res){
-      console.dir(res);
+      console.dir(res.data);
     });
 
 }]);
