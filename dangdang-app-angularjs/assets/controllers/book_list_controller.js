@@ -4,7 +4,7 @@ app.controller('bookListController', ['$scope','commonService','$routeParams', f
   // console.dir($routeParams);
 
 c_s.getData($routeParams.id,function(res){
-  var bookData = res.data;
+  $scope.bookData = res.data;
       console.dir(res.data);
     });
 
