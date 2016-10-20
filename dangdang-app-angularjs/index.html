@@ -7,18 +7,18 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>当当网书籍热搜榜</title>
     <link rel="stylesheet" href="assets/lib/weui/weui.css">
-  <!-- <link rel="stylesheet" href=""> -->
+    <link rel="stylesheet" href="assets/css/index.css">
 </head>
 
 <body>
 
-    <div ng-app='app' ng-controller='mainController'>
+    <div ng-app='app'>
         <div class="page_bd">
             <div ng-view>
 
             </div>
 
-            <div class="weui-tabbar" ng-controller='mainController'>
+            <div class="weui-tabbar footer-nav" ng-controller='mainController'>
                 <a href="#/" ng-click='linkTo(0)' class="weui-tabbar__item  {{selectedIndex==0?'weui-bar__item_on':''}}">
                     <img src="./assets/images/icon_nav_special.png" alt="" class="weui-tabbar__icon">
                     <p class="weui-tabbar__label">首页</p>
