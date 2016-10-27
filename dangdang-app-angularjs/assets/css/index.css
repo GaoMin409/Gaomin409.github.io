@@ -2,7 +2,7 @@
   width: 100%;
   margin: 0;
   height: 100%;
-  background: './assets/images/bg00.jpg' center cover no-repeat;
+  background-image: url('./assets/images/bg00.jpg') center cover  no-repeat;
 
 }
 .container_form .form-horizontal{
