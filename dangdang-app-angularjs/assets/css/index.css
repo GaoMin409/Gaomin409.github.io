@@ -1,3 +1,19 @@
+.container_form .bgimg{
+  width: 100%;
+  margin: 0;
+  height: 100%;
+  background: './assets/images/bg00.jpg' center cover no-repeat;
+
+}
+.container_form .form-horizontal{
+  margin-top: 50px;
+}
+
+.container_form .form-horizontal label{
+  font-size: 25px;
+  color: #290303;
+  line-height: 30px;
+}
 .footer-nav{
   position: fixed;
 }
