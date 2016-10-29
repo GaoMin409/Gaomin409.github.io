@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Blog列表</title>
+	<link rel="stylesheet" href="/lib/bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+	<div class="container">
+		<div class="row projects">
+			{{each list}}
+			<div class="col-sm-6 col-md-4 col-lg-3 ">
+	          <div class="thumbnail">
+	            <a href="/blog/detail/{{$value.id}}" title="{{$value.title}}" target="_blank">
+								<img src="http://img4.imgtn.bdimg.com/it/u=541860943,3721876425&fm=21&gp=0.jpg">
+							</a>
+	            <div class="caption">
+	              <h1>
+	                <a href="/blog/detail/{{$value.id}}" title="{{$value.title}}" target="_blank">
+										{{$value.title}}
+	                <br>
+	                <small>{{$value.create_time}}</small>
+	                </a>
+	              </h1>
+	              <p>
+	              {{$value.description}}
+	              </p>
+	            </div>
+	          </div>
+        </div>
+        {{/each}}
+		</div>
+	</div>
+</body>
+</html>

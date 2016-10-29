@@ -1,0 +1,47 @@
+.projects .thumbnail {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    max-width: 350px;
+    margin-bottom: 30px;
+    border-radius: 0
+}
+
+.projects .thumbnail .caption {
+    /*height: 200px;*/
+    overflow-y: hidden;
+    color: #555
+}
+
+.projects .thumbnail .caption a:hover,.projects .thumbnail .caption a:focus {
+    text-decoration: none
+}
+
+.projects .thumbnail img {
+    max-width: 30%;
+    margin-left: 33%;
+    height: auto
+}
+
+.projects-header {
+    width: 60%;
+    text-align: center;
+    margin: 60px 0 10px;
+    font-weight: 200;
+    margin-bottom: 40px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto
+}
+
+.projects-header h2 {
+    font-size: 30px;
+    letter-spacing: -1px
+}
+
+@media screen and (min-width: 768px) {
+    .projects-header h2 {
+        font-size:42px
+    }
+}
