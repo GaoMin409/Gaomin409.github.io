@@ -1,0 +1,32 @@
+html,body{
+  width: 100%;
+  height: 100%;
+}
+/*img{
+  margin: 20px auto;
+  display: block;
+  width: 0;
+}*/
+
+
+h2{
+  margin-left: 5%;
+  color: #3c0404;
+  font-size: 18px;
+  line-height: 25px;
+}
+.score{
+  color: #ff0000;
+}
+div{
+  width: 100px;
+  height: 100px;
+  text-align: center;
+  line-height: 100px;
+  color: #fff;
+  font-size: 50px;
+  border-radius: 50%;
+  margin: 20px;
+  display: inline-block;
+  cursor: pointer;
+}
