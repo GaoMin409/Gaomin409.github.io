@@ -1,0 +1,438 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+/*滚动屏属性*/
+body,
+html {
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+}
+ul {
+  list-style: none;
+}
+.content {
+  width: 100%;
+  height: 100%;
+  transform: translateY(0%);
+  /*IE6、7、8、9都不兼容*/
+  transition: all 1s cubic-bezier(0.86, 0, 0.07, 1) 0s;
+}
+.content div.page {
+  width: 100%;
+  height: 100%;
+}
+.content div.page0 {
+  background-color: #ccc;
+}
+.content div.page1 {
+  background: url("../images/bg7.jpg") no-repeat center top;
+  position: relative;
+  height: 100%;
+}
+.content div.page2 {
+  background: url("../images/bg00.png") no-repeat center top;
+  position: relative;
+  height: 100%;
+}
+.content div.page3 {
+  position: relative;
+  overflow: hidden;
+  height: 100%;
+  background: url("../images/bg5.jpg") no-repeat center top;
+}
+/*LOGO*/
+nav .logo {
+  float: left;
+  width: 60px;
+  height: 60px;
+  margin-left: 5%;
+  background: url("../images/logo1.gif") center center;
+  background-size: 60px 60px;
+  text-indent: -999em;
+  border-radius: 50%;
+  border: 3px solid #ccc;
+  box-sizing: border-line;
+}
+/*导航*/
+nav {
+  position: fixed;
+  z-index: 999;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 60px;
+  background-color: #27252e;
+}
+nav .nav-center {
+  height: 60px;
+  width: 100%;
+  margin: 0 auto;
+}
+nav ul li div {
+  width: 120px;
+  height: 60px;
+  perspective: 5000px;
+  transform-style: preserve-3d;
+  transition: all 0.5s ease 0s;
+}
+nav ul {
+  float: right;
+  width: 70%;
+}
+nav ul li {
+  display: inline-block;
+  float: left;
+  width: 18%;
+  height: 60px;
+  margin-left: 25px;
+  position: relative;
+  cursor: pointer;
+}
+nav ul li div span {
+  height: 60px;
+  width: 120px;
+  position: absolute;
+  text-align: center;
+  line-height: 60px;
+  display: block;
+  background-color: #27252e;
+  color: #fff;
+  font-family: "微软雅黑";
+  font-size: 14px;
+  top: 0;
+  left: 0;
+}
+nav ul li div span:nth-child(1) {
+  transform: translateZ(30px);
+}
+nav ul li div span:nth-child(2) {
+  transform: rotateX(90deg) translateZ(30px);
+  color: gold;
+}
+nav ul li:hover div {
+  transform: rotateX(-90deg);
+}
+.nav-center ul div.cur {
+  transform: rotateX(-90deg);
+}
+/*banner*/
+.page0 ul li {
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  position: absolute;
+  display: none;
+}
+.page0 {
+  position: relative;
+}
+.page0 ul {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+.page0 ul li img {
+  width: 100%;
+  height: 100%;
+}
+.page0 ul li.first {
+  display: block;
+}
+/*小圆点*/
+.circles {
+  width: 20px;
+  height: 150px;
+  position: fixed;
+  z-index: 999;
+  right: 20px;
+  top: 50%;
+  margin-top: -75px;
+}
+.circles ul {
+  width: 20px;
+  height: 150px;
+  position: absolute;
+  top: -19px;
+}
+.circles ul li {
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background-color: #fff;
+  margin: 20px -1px;
+  border: 2px solid #fff;
+  cursor: pointer;
+  opacity: 0.2;
+}
+.circles .opctity {
+  width: 20px;
+  height: 150px;
+  background-color: #ccc;
+  opacity: 0.2;
+  border-radius: 50px;
+}
+.circles ul li.cur {
+  background-color: #000;
+}
+/*第二页内容*/
+.page1 .rotation {
+  width: 454px;
+  height: 454px;
+  top: 50%;
+  left: 50%;
+  margin-left: -227px;
+  margin-top: -227px;
+  transition: all 1s ease 0s;
+  /*background-color: #000;*/
+  position: absolute;
+}
+.page1 .rotation img {
+  opacity: 0;
+  transition: all 2s ease 0s;
+}
+.page1.cur .rotation img {
+  transform: rotate(360deg);
+  opacity: 1;
+}
+.page1 .rotation span {
+  color: #fff;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transition: all 1.5s ease 0s;
+  opacity: 0;
+}
+.page1 .rotation #wz0 {
+  left: 216px;
+}
+.page1.cur .rotation #wz0 {
+  transform: translateY(-270px);
+  opacity: 1;
+}
+.page1.cur .rotation #wz1 {
+  transform: translateX(-250px) translateY(-200px);
+  opacity: 1;
+}
+.page1.cur .rotation #wz2 {
+  transform: translateX(160px) translateY(-200px);
+  opacity: 1;
+}
+.page1.cur .rotation #wz3 {
+  transform: translateX(-200px) translateY(200px);
+  opacity: 1;
+}
+.page1.cur .rotation #wz4 {
+  transform: translateX(100px) translateY(200px);
+  opacity: 1;
+}
+/*第二页左边文字*/
+.page1 .left-wz {
+  width: 305px;
+  height: 300px;
+  position: absolute;
+  top: 50%;
+  margin-top: -50px;
+  left: -50px;
+  line-height: 40px;
+}
+.page1 .left-wz #l-bt {
+  position: absolute;
+  color: gold;
+  font-size: 30px;
+  font-weight: bold;
+  top: -100px;
+}
+.page1 .left-wz span {
+  position: absolute;
+  color: #fff;
+  opacity: 0;
+}
+.page1 .left-wz #l-bt {
+  transition: all 1s ease 0s;
+}
+.page1 .left-wz #l-wz1 {
+  transition: all 1s ease 0.2s;
+}
+.page1 .left-wz #l-wz2 {
+  transition: all 1s ease 0.4s;
+}
+.page1 .left-wz #l-wz3 {
+  transition: all 1s ease 0.6s;
+}
+.page1 .left-wz #l-wz4 {
+  transition: all 1s ease 0.8s;
+}
+.page1 .left-wz #l-wz5 {
+  transition: all 1s ease 1s;
+}
+.page1.cur .left-wz #l-wz1 {
+  transform: translateX(100px);
+  opacity: 1;
+}
+.page1.cur .left-wz #l-wz2 {
+  transform: translateX(100px);
+  opacity: 1;
+}
+.page1.cur .left-wz #l-wz3 {
+  transform: translateX(100px);
+  opacity: 1;
+}
+.page1.cur .left-wz #l-wz4 {
+  transform: translateX(100px);
+  opacity: 1;
+}
+.page1.cur .left-wz #l-wz5 {
+  transform: translateX(100px);
+  opacity: 1;
+}
+.page1.cur .left-wz #l-bt {
+  transform: translateX(100px);
+  opacity: 1;
+}
+.page1 .button_text {
+  font-size: 30px;
+  color: #ccc;
+  position: absolute;
+  bottom: 5%;
+  left: 5%;
+}
+/*第三页左边技能*/
+.page2 .cd-section {
+  width: 100%;
+  height: 100%;
+}
+.page2 .skill {
+  height: 100%;
+  width: 100%;
+  margin-top: 20px;
+  background-color: #d7dbdb;
+}
+.page2 .skill .skillContainer {
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  position: relative;
+}
+.page2 .skill .skillContainer {
+  width: 100%;
+  margin-top: 60px;
+  background: url("../images/bg00.png") no-repeat center top;
+}
+.page2 .skill .skillContainer h1 {
+  position: absolute;
+  margin-top: 3%;
+  left: 45%;
+  font-size: 30px;
+  line-height: 35px;
+  color: #bdd645;
+}
+.page2 .skill .skillContainer h2 {
+  position: absolute;
+  margin-top: 8%;
+  left: 45%;
+  text-align: center;
+  font-size: 25px;
+  line-height: 30px;
+  color: #bdd645;
+}
+.page2 .skill .skillLIst {
+  width: 50%;
+  position: absolute;
+  top: 5%;
+  margin-left: 2%;
+  margin-top: 18%;
+}
+.page2 .skill .skillLIst ul {
+  margin-top: -10%;
+}
+.page2 .skill .skillLIst ul.list li {
+  list-style: circle;
+  font-size: 14px;
+  line-height: 20px;
+  color: #181C26;
+  margin-left: 20px;
+}
+.page2 .skill .skillLIst .tech-skill-list__item {
+  position: relative;
+  margin-bottom: 20px;
+}
+.page2 .skill .skillLIst .tech-skill-list__item-html-and-css {
+  width: 80%;
+}
+.page2 .skill .skillLIst .tech-skill-list__item-javascript {
+  width: 70%;
+}
+.page2 .skill .skillLIst .tech-skill-list__item-nodejs {
+  width: 60%;
+}
+.page2 .skill .skillLIst .tech-skill-list__item-bootstrap {
+  width: 55%;
+}
+.page2 .skill .skillLIst .tech-skill-list__item-ajax {
+  width: 45%;
+}
+.page2 .skill .skillLIst .tech-skill-list__item-ui {
+  width: 40%;
+}
+.page2 .skill .skillLIst .tech-skill-list__item-mvvm {
+  width: 35%;
+}
+.page2 .skill .skillLIst .tech-skill-list__item__name {
+  height: 40px;
+  line-height: 30px;
+  padding-left: 10px;
+  overflow: hidden;
+  border-left: 3px solid;
+  color: #ff742a;
+  background-color: #fff6dd;
+  border-color: #fdbc40;
+}
+.page2 .skill .skillLIst .tech-skill-list__item--practised .tech-skill-list__item__name {
+  color: #6e9c0f;
+  background-color: #eaf6d0;
+  border-color: #80bd01;
+}
+.page2 .skill .skillLIst .tech-skill-list__item--mastered .tech-skill-list__item__name {
+  color: #2a7da9;
+  background-color: #d6efff;
+  border-color: #3498db;
+}
+.page2 .skill .skillLIst .tech-skill-list__item__detail {
+  position: absolute;
+  left: 150px;
+  top: 12px;
+  z-index: 9999;
+  max-width: 350px;
+  height: auto;
+  padding: 10px;
+  background: rgba(255, 255, 255, 0.8);
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+  display: none;
+}
+@media (max-width: 749px) {
+  .skill .skillLIst .tech-skill-list__item {
+    margin-bottom: 15px;
+  }
+}
+@media (min-width: 750px) {
+  .skill .skillLIst .tech-skill-list__item {
+    margin-bottom: 20px;
+  }
+  .skill .skillLIst .tech-skill-list__item:hover .tech-skill-list__item__detail {
+    display: block;
+  }
+}
+.page2 .mac {
+  margin-left: 52%;
+  width: 55%;
+}
+.page2 .mac img {
+  margin-top: 230px;
+  margin-left: 0;
+  height: 333px;
+}
+/*第四页TAB*/

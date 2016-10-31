@@ -1,19 +1,194 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<!-- 头部 -->
+
 <head>
-  <!-- 设置编码格式 -->
-  <meta charset="UTF-8">
-  <!-- 设置viewport -->
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>这个页面是用在ios中</title>
+	<meta charset="UTF-8">
+	<title>高敏的个人页</title>
+	<link rel="stylesheet" href="css/css.css" />
+	<link rel="shortcut icon" href="favicon.ico" />
 </head>
-<!-- 体 -->
+
 <body>
-  <script type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");document.write(unescape("%3Cspan id='cnzz_stat_icon_1260658792'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s95.cnzz.com/z_stat.php%3Fid%3D1260658792' type='text/javascript'%3E%3C/script%3E"));</script>
-  <h1>这个是我的个人主页</h1>
-  <img src="tupian/1.jpg" alt="" />
-  <img src="tupian/12.jpg" alt="" />
+	<!-- //翻页小圆点 -->
+	<div class="circles">
+		<div class="opctity"></div>
+		<ul>
+			<li class="cur"></li>
+			<li></li>
+			<li></li>
+			<li></li>
+		</ul>
+	</div>
+	<!-- //导航 -->
+	<nav>
+		<div class="nav-center">
+			<a class="logo" href="#">calvinlee</a>
+			<ul>
+				<li>
+					<div class="cur">
+						<span>首页</span>
+						<span>HOME</span>
+					</div>
+				</li>
+				<li>
+					<div>
+						<span>关于我</span>
+						<span>ABOUT ME</span>
+					</div>
+				</li>
+				<li>
+					<div>
+						<span>我的技能</span>
+						<span>MY SKILLS</span>
+					</div>
+				</li>
+				<li>
+					<div>
+						<span>我的作品</span>
+						<span>MY WORK</span>
+					</div>
+				</li>
+			</ul>
+		</div>
+	</nav>
+	<!-- //页面 -->
+	<div class="content">
+		<div class="page page0">
+			<ul>
+				<li class="first">
+					<a href="#>"><img src="images/banner1.jpg"></a>
+				</li>
+				<li>
+					<a href="#>"><img src="images/banner2.jpg"></a>
+				</li>
+				<li>
+					<a href="#>"><img src="images/banner3.jpg"></a>
+				</li>
+			</ul>
+		</div>
+		<div class="page page1">
+			<div class="rotation">
+				<span id="wz0"><b style="color:gold">Name:</b><br />高敏</span>
+				<span id="wz1"><b style="color:gold">Phone: </b><br />187 6382 9110</span>
+				<span id="wz2"><b style="color:gold">github：</b><br />gaomin409</span>
+				<span id="wz3"><b style="color:gold">求职意向：</b><br />前端工程师</span>
+				<span id="wz4"><b style="color:gold">E-mail：</b><br /><a style="text-decoration: none;color: #ffffff;" href="mailto:gaomin409@163.com">gaomin409@163.com</a></span>
+				<img id="fc" src="images/fc.png">
+			</div>
+			<div class="left-wz">
+				<span id="l-bt">我的个人信息</span>
+				<span id="l-wz1">程序写完了吗？还不赶快去写</span><br />
+				<span id="l-wz2">现在几号了你知道吗？</span><br />
+				<span id="l-wz3">稳定性有把握吗？</span><br />
+				<span id="l-wz4">Bug修了吗？</span><br />
+				<span id="l-wz5">代码整理了吗？</span><br />
+			</div>
+			<div class="button_text">快 到 我 的 碗 里 来 ...</div><br />
+		</div>
+		<!-- 第二页 左边文字 -->
+		<div class="page page2">
+			<!--技能掌握-->
+		<section class="cd-section">
+			<div class="skill">
+				<div class="skillContainer">
+					<h1>技能掌握</h1>
+				<h2>熟悉前端，了解后端</h2>
+				<div class="skillLIst">
+					<ul class="tech-skill-list">
+						<li class="tech-skill-list__item tech-skill-list__item-html-and-css tech-skill-list__item--mastered">
+							<h4 class="tech-skill-list__item__name">HTML(5) &amp; CSS(3)</h4>
+							<div class="tech-skill-list__item__detail">
+								<ul class="list">
+									<li>能使用合适的结构编写兼容主流浏览器的页面布局；模仿过京东等大型网站的静态页面</li>
+									<li>了解HTML 5新标签的语义；</li>
+									<li>能适当运用CSS 3使页面在现代浏览器上效果更佳；</li>
+									<li>能熟练使用Atom开发者工具、chrome等工具辅助开发。</li>
+								</ul>
+							</div>
+						</li>
+						<li class="tech-skill-list__item tech-skill-list__item-javascript tech-skill-list__item--mastered">
+							<h4 class="tech-skill-list__item__name">JavaScript &amp; jQuery</h4>
+							<div class="tech-skill-list__item__detail">
+								<ul class="list">
+									<li>熟练掌握原生Javascript，能脱离jQuery等类库编码；</li>
+									<li>熟练掌握jQuery框架，提高开发效率；</li>
+									<li>能运用面向对象的思想编写js程序；</li>
+									<li>能够使用js和服务端通信</li>
+								</ul>
+							</div>
+						</li>
+						<li class="tech-skill-list__item tech-skill-list__item-nodejs tech-skill-list__item--mastered">
+							<h4 class="tech-skill-list__item__name">nodejs</h4>
+							<div class="tech-skill-list__item__detail ">
+								<ul class="list">
+									<li>对nodejs有一定的了解，能够使用express框架开发完整项目</li>
+									<li>了解nodejs模块</li>
+									<li>了解包管理工具--npm</li>
+								</ul>
+							</div>
+						</li>
+						<li class="tech-skill-list__item tech-skill-list__item-bootstrap tech-skill-list__item--practised">
+							<h4 class="tech-skill-list__item__name">bootstrap</h4>
+							<div class="tech-skill-list__item__detail ">
+								<ul class="list">
+									<li>熟练掌握bootstrap框架；</li>
+									<li>能够运用bootstrap进行pc端和移动端的开发。</li>
+								</ul>
+							</div>
+						</li>
+						<li class="tech-skill-list__item tech-skill-list__item-ajax tech-skill-list__item--practised">
+							<h4 class="tech-skill-list__item__name">ajax</h4>
+							<div class="tech-skill-list__item__detail ">
+								<ul class="list">
+									<li>掌握了ajax的概念和原理；</li>
+									<li>会写原生的ajax；</li>
+									<li>会使用主流库的封装的ajax方法以及参数，类似jQuery的$.ajax()。</li>
+								</ul>
+							</div>
+						</li>
+						<li class="tech-skill-list__item tech-skill-list__item-ui tech-skill-list__item--practised">
+							<h4 class="tech-skill-list__item__name">前端ui框架</h4>
+							<div class="tech-skill-list__item__detail ">
+								<ul class="list">
+									<li>熟练使用sui.mobile、framework7、weui、ionic等框架</li>
+								</ul>
+							</div>
+						</li>
+						<li class="tech-skill-list__item tech-skill-list__item-mvvm">
+							<h4 class="tech-skill-list__item__name">mvvm</h4>
+							<div class="tech-skill-list__item__detail ">
+								<ul class="list">
+									<li>熟练使用angular.js框架开发单页面程序；</li>
+									<li>熟悉mongodb数据库的基础操作；</li>
+									<li>了解vui.js的api相应数据</li>
+								</ul>
+							</div>
+						</li>
+					</ul>
+
+				</div>
+				<!-- 右边图片 -->
+				<div class="mac">
+					<img src="images/about.png" alt="">
+				</div>
+				</div>
+
+			</div>
+		</section>
+		</div>
+
+
+		<!-- 第四页 start -->
+		<div class="page page3">
+正在建设中，请稍后。。。
+		</div>
+		<script type="text/javascript" src="lib/jquery-1.11.2.min.js"></script>
+		<script type="text/javascript" src="lib/jquery.mousewheel.min.js"></script>
+		<script type="text/javascript" src="js/shouye.js"></script>
+		<script type="text/javascript">
+			gundong();
+		</script>
+	</div>
 </body>
+
 </html>
